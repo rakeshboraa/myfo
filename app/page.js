@@ -5,6 +5,8 @@ import { useState } from "react";
 import KeyFeatures from "@/components/KeyFeatures";
 import Testimonial from "@/components/Testimonial";
 
+
+
 export default function Home() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
@@ -14,70 +16,70 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex container mx-auto ">
-        <div className="flex-4">
-          <div className="px-4 ">
-            <div className="mx-auto border-l flex border-r">
-              <div className="pb-20 flex-[3.129] px-4">
-                <div className="w-[157px] pt-4">
-                  <img src="main_logo.png" />
+      <div className="flex flex-col lg:flex-row container mx-auto">
+        <div className="flex-4 w-full lg:w-auto">
+          <div className="px-2 sm:px-4">
+            <div className="mx-auto lg:border-l flex lg:border-r">
+              <div className="pb-10 lg:pb-20 flex-[3.129] px-2 sm:px-4 w-full">
+                <div className="w-[100px] sm:w-[120px] lg:w-[157px] pt-4">
+                  <img src="main_logo.png" alt="MYFO Logo" className="w-full" />
                 </div>
-                <div className="w-full mt-[40px]  rounded">
-                  <img src="hher.png" className="w-full object-contain  " />
+                <div className="w-full mt-[20px] sm:mt-[30px] lg:mt-[40px] rounded">
+                  <img src="hher.png" className="w-full object-contain" alt="Hero" />
                 </div>
                 <div>
-                  <div className="flex mt-16 gap-3">
-                    <div className="flex-1">
-                      <h1 className="text-[23px]">Why Choose MYFO?</h1>
-                      <p className="text-[15px]">Our platform brings the tools and features you need into one place.</p>
+                  <div className="flex flex-col lg:flex-row mt-8 lg:mt-16 gap-3 lg:gap-3">
+                    <div className="flex-1 mb-4 lg:mb-0">
+                      <h1 className="text-[18px] sm:text-[20px] lg:text-[23px]">Why Choose MYFO?</h1>
+                      <p className="text-[13px] sm:text-[14px] lg:text-[15px]">Our platform brings the tools and features you need into one place.</p>
                     </div>
                     <div className="flex-2">
-                      <div className="grid grid-cols-2 gap-5">
-                        <div className="w-[264px]">
-                          <div className="w-[264px]">
-                            <img src="img1.png" className="rounded" />
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 lg:gap-5">
+                        <div className="w-full sm:w-[220px] lg:w-[264px]">
+                          <div className="w-full sm:w-[220px] lg:w-[264px]">
+                            <img src="img1.png" className="rounded w-full" alt="Feature 1" />
                           </div>
                           <div className="flex gap-2 items-center mt-3">
                             <Share className="w-3 h-3" />
-                            <h1 className="text-[12px]">Holistic Wealth Management</h1>
+                            <h1 className="text-[11px] sm:text-[12px]">Holistic Wealth Management</h1>
                           </div>
-                          <p className="mt-2 text-[10px]">
+                          <p className="mt-2 text-[9px] sm:text-[10px]">
                             MYFO consolidates all your financial tools and data into one intuitive platform, offering a comprehensive view of your wealth and empowering you to make informed decisions with ease.
                           </p>
                         </div>
-                        <div className="w-[264px]">
-                          <div className="w-[264px]">
-                            <img src="img1.png" className="rounded" />
+                        <div className="w-full sm:w-[220px] lg:w-[264px]">
+                          <div className="w-full sm:w-[220px] lg:w-[264px]">
+                            <img src="img1.png" className="rounded w-full" alt="Feature 2" />
                           </div>
                           <div className="flex gap-2 items-center mt-3">
                             <Share className="w-3 h-3" />
-                            <h1 className="text-[12px]">Holistic Wealth Management</h1>
+                            <h1 className="text-[11px] sm:text-[12px]">Holistic Wealth Management</h1>
                           </div>
-                          <p className="mt-2 text-[10px]">
+                          <p className="mt-2 text-[9px] sm:text-[10px]">
                             MYFO consolidates all your financial tools and data into one intuitive platform, offering a comprehensive view of your wealth and empowering you to make informed decisions with ease.
                           </p>
                         </div>
-                        <div className="w-[264px]">
-                          <div className="w-[264px]">
-                            <img src="img1.png" className="rounded" />
+                        <div className="w-full sm:w-[220px] lg:w-[264px]">
+                          <div className="w-full sm:w-[220px] lg:w-[264px]">
+                            <img src="img1.png" className="rounded w-full" alt="Feature 3" />
                           </div>
                           <div className="flex gap-2 items-center mt-3">
                             <Share className="w-3 h-3" />
-                            <h1 className="text-[12px]">Holistic Wealth Management</h1>
+                            <h1 className="text-[11px] sm:text-[12px]">Holistic Wealth Management</h1>
                           </div>
-                          <p className="mt-2 text-[10px]">
+                          <p className="mt-2 text-[9px] sm:text-[10px]">
                             MYFO consolidates all your financial tools and data into one intuitive platform, offering a comprehensive view of your wealth and empowering you to make informed decisions with ease.
                           </p>
                         </div>
-                        <div className="w-[264px]">
-                          <div className="w-[264px]">
-                            <img src="img1.png" className="rounded" />
+                        <div className="w-full sm:w-[220px] lg:w-[264px]">
+                          <div className="w-full sm:w-[220px] lg:w-[264px]">
+                            <img src="img1.png" className="rounded w-full" alt="Feature 4" />
                           </div>
                           <div className="flex gap-2 items-center mt-3">
                             <Share className="w-3 h-3" />
-                            <h1 className="text-[12px]">Holistic Wealth Management</h1>
+                            <h1 className="text-[11px] sm:text-[12px]">Holistic Wealth Management</h1>
                           </div>
-                          <p className="mt-2 text-[10px]">
+                          <p className="mt-2 text-[9px] sm:text-[10px]">
                             MYFO consolidates all your financial tools and data into one intuitive platform, offering a comprehensive view of your wealth and empowering you to make informed decisions with ease.
                           </p>
                         </div>
@@ -86,80 +88,76 @@ export default function Home() {
                   </div>
                   <KeyFeatures />
                   <Testimonial />
-                  <div className="flex mt-10">
-                    <img src="heros.png" className="rounded" />
+                  <div className="flex mt-6 lg:mt-10">
+                    <img src="heros.png" className="rounded w-full" alt="Heroes" />
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="flex px-4 absolute bg-[#DCDBD5]">
-            <div className=" border-l w-full flex-5 pl-4">
-              <div className="flex">
-                <div className="flex-2 pb-14 flex-col border-r text-[14px] pt-5 ">
-                  <div className="flex">
-                    <div className="flex-1">
-                      Product
-                      <ul className="capitalize mt-2 gap-2">
-                        <li className="flex justify-between gap-7 pr-13 items-center">features <span><MdOutlineKeyboardArrowRight /></span></li>
-                        <li className="flex justify-between pr-13 items-center">features <span><MdOutlineKeyboardArrowRight /></span></li>
-                        <li className="flex justify-between pr-13 items-center">features <span><MdOutlineKeyboardArrowRight /></span></li>
-                        <li className="flex justify-between pr-13 items-center">features <span><MdOutlineKeyboardArrowRight /></span></li>
-                      </ul>
+            <div className="mx-auto lg:border-l flex lg:border-r bg-[#DCDBD5]">
+              <div className="w-full flex-5 pl-2 sm:pl-4">
+                <div className="flex flex-col lg:flex-row">
+                  <div className="flex-2 pb-8 lg:pb-14 flex-col lg:border-r text-[12px] sm:text-[13px] lg:text-[14px] pt-5">
+                    <div className="flex flex-col sm:flex-row lg:flex-row">
+                      <div className="flex-1 mb-4 sm:mb-0">
+                        Product
+                        <ul className="capitalize mt-2 gap-2">
+                          <li className="flex justify-between gap-7 pr-4 lg:pr-13 items-center">features <span><MdOutlineKeyboardArrowRight /></span></li>
+                          <li className="flex justify-between pr-4 lg:pr-13 items-center">features <span><MdOutlineKeyboardArrowRight /></span></li>
+                          <li className="flex justify-between pr-4 lg:pr-13 items-center">features <span><MdOutlineKeyboardArrowRight /></span></li>
+                          <li className="flex justify-between pr-4 lg:pr-13 items-center">features <span><MdOutlineKeyboardArrowRight /></span></li>
+                        </ul>
+                      </div>
+                      <div className="flex-1 mb-4 sm:mb-0">
+                        Company
+                        <ul className="capitalize mt-2 gap-2">
+                          <li className="flex justify-between pr-4 lg:pr-13 gap-7 items-center">features <span><MdOutlineKeyboardArrowRight /></span></li>
+                          <li className="flex justify-between pr-4 lg:pr-13 items-center">features <span><MdOutlineKeyboardArrowRight /></span></li>
+                          <li className="flex justify-between pr-4 lg:pr-13 items-center">features <span><MdOutlineKeyboardArrowRight /></span></li>
+                          <li className="flex justify-between pr-4 lg:pr-13 items-center">features <span><MdOutlineKeyboardArrowRight /></span></li>
+                        </ul>
+                      </div>
+                      <div className="flex-1">
+                        Resources
+                        <ul className="capitalize mt-2 gap-2">
+                          <li className="flex justify-between pr-4 lg:pr-13 gap-7 items-center">features <span><MdOutlineKeyboardArrowRight /></span></li>
+                          <li className="flex justify-between pr-4 lg:pr-13 items-center">features <span><MdOutlineKeyboardArrowRight /></span></li>
+                          <li className="flex justify-between pr-4 lg:pr-13 items-center">features <span><MdOutlineKeyboardArrowRight /></span></li>
+                          <li className="flex justify-between pr-4 lg:pr-13 items-center">features <span><MdOutlineKeyboardArrowRight /></span></li>
+                        </ul>
+                      </div>
                     </div>
-                    <div className="flex-1">
-                      Company
-                      <ul className="capitalize mt-2 gap-2">
-                        <li className="flex justify-between pr-13 gap-7 items-center">features <span><MdOutlineKeyboardArrowRight /></span></li>
-                        <li className="flex justify-between pr-13 items-center">features <span><MdOutlineKeyboardArrowRight /></span></li>
-                        <li className="flex justify-between pr-13 items-center">features <span><MdOutlineKeyboardArrowRight /></span></li>
-                        <li className="flex justify-between pr-13 items-center">features <span><MdOutlineKeyboardArrowRight /></span></li>
-                      </ul>
+                    <div className="flex mt-12 lg:mt-24 flex-col gap-3">
+                      <h1 className="text-[18px] sm:text-[20px] lg:text-[23px]">Join the MYFO community</h1>
+                      <p className="text-[14px] sm:text-[15px] lg:text-[16px] w-full lg:w-[90%]">Join our email list and get access to special free insights on financial and wealth management; exclusive only to our subscribers.</p>
                     </div>
-                    <div className="flex-1">
-                      Resources
-                      <ul className="capitalize mt-2 gap-2">
-                        <li className="flex justify-between pr-13 gap-7 items-center">features <span><MdOutlineKeyboardArrowRight /></span></li>
-                        <li className="flex justify-between pr-13 items-center">features <span><MdOutlineKeyboardArrowRight /></span></li>
-                        <li className="flex justify-between pr-13 items-center">features <span><MdOutlineKeyboardArrowRight /></span></li>
-                        <li className="flex justify-between pr-13 items-center">features <span><MdOutlineKeyboardArrowRight /></span></li>
-                      </ul>
+                    <div className="flex mt-6 w-full lg:w-[90%] max-w-md rounded-md overflow-hidden border border-gray-300 bg-gray-100">
+                      <input
+                        type="email"
+                        placeholder="Enter your email"
+                        className="flex-1 px-3 lg:px-4 py-2 bg-gray-100 outline-none text-sm"
+                      />
+                      <button className="px-3 lg:px-4 py-2 bg-gray-300 hover:bg-gray-400 transition text-sm">
+                        Subscribe
+                      </button>
+                    </div>
+                    <div className="h-[150px] sm:h-[180px] lg:h-[210px] mt-6 lg:mt-10 pr-2 lg:pr-5">
+                      <img src="/my.png" className="w-full h-full object-cover" alt="MY" />
                     </div>
                   </div>
-                  <div className="flex mt-24 flex-col gap-3">
-                    <h1 className="text-[23px] ">Join the MYFO community</h1>
-                    <p className="text-[16px] w-[90%]">Join our email list and get access to special free insights on financial and wealth management; exclusive only to our subscribers.
-                    </p>
+                  <div className="flex-2 pb-8 lg:pb-14 flex items-end">
+                    <div className="h-[150px] sm:h-[180px] lg:h-[210px] px-2 lg:px-5 w-full">
+                      <img src="/fo.png" className="w-full h-full object-cover" alt="FO" />
+                    </div>
                   </div>
-                  <div className="flex mt-6 w-[90%] max-w-md rounded-md overflow-hidden border border-gray-300 bg-gray-100">
-                    <input
-                      type="email"
-                      placeholder="Enter your email"
-                      className="flex-1 px-4 py-2 bg-gray-100 outline-none"
-                    />
-                    <button className="px-4 py-2 bg-gray-300 hover:bg-gray-400 transition">
-                      Subscribe
-                    </button>
-                  </div>
-                  <div className="h-[210px] mt-10 pr-5 ">
-                    <img src="/my.png" className="w-full h-full" />
-                  </div>
-                </div>
-                <div className="flex-2 pb-14  flex items-end border-r">
-                  <div className="h-[210px]  px-5 ">
-                    <img src="/fo.png" className="w-full h-full" />
-                  </div>
-                </div>
-                <div className="flex-[1.333]">
-
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className={`${isSidebarOpen ? 'flex-[1.2] ' : 'w-16'} py-4  bg-transparent pr-4 sticky top-0 self-start transition-all duration-300 ease-in-out overflow-hidden`}>
-          <div className="flex flex-col ">
+        <div className={`${isSidebarOpen ? 'w-full lg:flex-[1.2]' : 'w-16'} py-4 bg-transparent pr-2 lg:pr-4 ${isSidebarOpen ? 'block lg:sticky' : 'absolute'} right-0 top-0 self-start transition-all duration-300 ease-in-out overflow-hidden`}>
+          <div className="flex flex-col">
             <div className="pt-2">
               <div className="flex justify-between">
                 <button
@@ -169,21 +167,21 @@ export default function Home() {
                   <AlignLeft className="w-4 h-4" />
                 </button>
                 {isSidebarOpen && (
-                  <div className="flex text-[9px] h-[30px] gap-2">
-                    <button className="px-2 bg-[#A0A2A0] flex items-center justify-center border border-[#A0A2A0] rounded">
+                  <div className="flex text-[8px] sm:text-[9px] h-[30px] gap-1 sm:gap-2">
+                    <button className="px-1 sm:px-2 bg-[#A0A2A0] flex items-center justify-center border border-[#A0A2A0] rounded text-white">
                       Log In
                     </button>
-                    <button className="px-2 bg-[#f2f2f2] flex items-center justify-center border border-[#A0A2A0] rounded">
+                    <button className="px-1 sm:px-2 bg-[#f2f2f2] flex items-center justify-center border border-[#A0A2A0] rounded">
                       Demo
                     </button>
-                    <button className="px-2 bg-[#f2f2f2] flex items-center justify-center border border-[#A0A2A0] rounded">
+                    <button className="px-1 sm:px-2 bg-[#f2f2f2] flex items-center justify-center border border-[#A0A2A0] rounded">
                       9:02 PM NYC
                     </button>
                   </div>
                 )}
               </div>
               {isSidebarOpen && (
-                <div className="pt-10 flex gap-4">
+                <div className="pt-6 lg:pt-10 flex gap-3 lg:gap-4">
                   <Instagram className="w-4" />
                   <Linkedin className="w-4" />
                   <Twitter className="w-4" />
@@ -193,75 +191,71 @@ export default function Home() {
 
             {isSidebarOpen && (
               <>
-                <div className="">
-                  <div className="h-[201px]">
+                <div className="mt-4 lg:mt-0">
+                  <div className="h-[120px] lg:h-[90px]">
+                    {/* Placeholder for content */}
                   </div>
                   <div className="mt-5">
                     <div className="flex justify-between items-center">
-                      <h3 className="text-[13px]">News+Blogs</h3>
+                      <h3 className="text-[12px] lg:text-[13px]">News+Blogs</h3>
                     </div>
                     <div className="mt-2 flex gap-2 justify-center items-center bg-[#F2F2F2] p-2 border border-[#A0A2A0] rounded">
-                      <div className="w-[90px] h-[40px]">
-                        <img src="/hero.png" className="h-full w-full" />
+                      <div className="w-[70px] lg:w-[59px] h-[30px] lg:h-[40px] flex-shrink-0">
+                        <img src="/hero.png" className="h-full w-full object-cover" alt="Blog" />
                       </div>
-                      <div className="text-[9px] flex flex-col">
+                      <div className="text-[8px] lg:text-[9px] flex flex-col flex-1">
                         <div className="flex justify-between items-center">
                           <span>New Blog</span>
-                          <ExternalLink className="w-4 h-4" />
+                          <ExternalLink className="w-3 lg:w-4 h-3 lg:h-4" />
                         </div>
-                        <h1>Deloitte&apos;s blueprint for the future: How family offices are adapting to complexity in 2024</h1>
-
+                        <h1 className="line-clamp-2">Deloitte's blueprint for the future: How family offices are adapting to complexity in 2024</h1>
                       </div>
                     </div>
                     <div className="mt-2 flex gap-2 justify-center items-center bg-[#F2F2F2] p-2 border border-[#A0A2A0] rounded">
-                      <div className="w-[90px] h-[40px]">
-                        <img src="/hero.png" className="h-full w-full" />
+                      <div className="w-[70px] lg:w-[59px] h-[30px] lg:h-[40px] flex-shrink-0">
+                        <img src="/hero.png" className="h-full w-full object-cover" alt="Blog" />
                       </div>
-                      <div className="text-[9px] flex flex-col">
+                      <div className="text-[8px] lg:text-[9px] flex flex-col flex-1">
                         <div className="flex justify-between items-center">
                           <span>New Blog</span>
-                          <ExternalLink className="w-4 h-4" />
+                          <ExternalLink className="w-3 lg:w-4 h-3 lg:h-4" />
                         </div>
-                        <h1>Deloitte&apos;s blueprint for the future: How family offices are adapting to complexity in 2024</h1>
-
+                        <h1 className="line-clamp-2">Deloitte's blueprint for the future: How family offices are adapting to complexity in 2024</h1>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="mt-5">
                   <div className="flex justify-between items-center">
-                    <h3 className="text-[13px]">As Seen On</h3>
+                    <h3 className="text-[12px] lg:text-[13px]">As Seen On</h3>
                   </div>
                   <div className="mt-2 flex gap-2 justify-center items-center bg-[#F2F2F2] p-2 border border-[#A0A2A0] rounded">
-                    <div className="w-[90px] h-[40px]">
-                      <img src="/hero.png" className="h-full w-full" />
+                    <div className="w-[70px] lg:w-[59px] h-[30px] lg:h-[40px] flex-shrink-0">
+                      <img src="/hero.png" className="h-full w-full object-cover" alt="Blog" />
                     </div>
-                    <div className="text-[9px] flex flex-col">
+                    <div className="text-[8px] lg:text-[9px] flex flex-col flex-1">
                       <div className="flex justify-between items-center">
                         <span>New Blog</span>
-                        <ExternalLink className="w-4 h-4" />
+                        <ExternalLink className="w-3 lg:w-4 h-3 lg:h-4" />
                       </div>
-                      <h1>Deloitte&apos;s blueprint for the future: How family offices are adapting to complexity in 2024</h1>
-
+                      <h1 className="line-clamp-2">Deloitte's blueprint for the future: How family offices are adapting to complexity in 2024</h1>
                     </div>
                   </div>
                   <div className="mt-2 flex gap-2 justify-center items-center bg-[#F2F2F2] p-2 border border-[#A0A2A0] rounded">
-                    <div className="w-[90px] h-[40px]">
-                      <img src="/hero.png" className="h-full w-full" />
+                    <div className="w-[70px] lg:w-[59px] h-[30px] lg:h-[40px] flex-shrink-0">
+                      <img src="/hero.png" className="h-full w-full object-cover" alt="Blog" />
                     </div>
-                    <div className="text-[9px] flex flex-col">
+                    <div className="text-[8px] lg:text-[9px] flex flex-col flex-1">
                       <div className="flex justify-between items-center">
                         <span>New Blog</span>
-                        <ExternalLink className="w-4 h-4" />
+                        <ExternalLink className="w-3 lg:w-4 h-3 lg:h-4" />
                       </div>
-                      <h1>Deloitte&apos;s blueprint for the future: How family offices are adapting to complexity in 2024</h1>
-
+                      <h1 className="line-clamp-2">Deloitte's blueprint for the future: How family offices are adapting to complexity in 2024</h1>
                     </div>
                   </div>
                 </div>
               </>
             )}
-
           </div>
         </div>
       </div>
