@@ -209,7 +209,8 @@ export default function Home() {
                           <span>New Blog</span>
                           <ExternalLink className="w-4 h-4" />
                         </div>
-                        <h1>Deloitte's blueprint for the future: How family offices are adapting to complexity in 2024</h1>
+                        <h1>Deloitte&apos;s blueprint for the future: How family offices are adapting to complexity in 2024</h1>
+
                       </div>
                     </div>
                     <div className="mt-2 flex gap-2 justify-center items-center bg-[#F2F2F2] p-2 border border-[#A0A2A0] rounded">
@@ -221,7 +222,8 @@ export default function Home() {
                           <span>New Blog</span>
                           <ExternalLink className="w-4 h-4" />
                         </div>
-                        <h1>Deloitte's blueprint for the future: How family offices are adapting to complexity in 2024</h1>
+                        <h1>Deloitte&apos;s blueprint for the future: How family offices are adapting to complexity in 2024</h1>
+
                       </div>
                     </div>
                   </div>
@@ -239,7 +241,8 @@ export default function Home() {
                         <span>New Blog</span>
                         <ExternalLink className="w-4 h-4" />
                       </div>
-                      <h1>Deloitte's blueprint for the future: How family offices are adapting to complexity in 2024</h1>
+                      <h1>Deloitte&apos;s blueprint for the future: How family offices are adapting to complexity in 2024</h1>
+
                     </div>
                   </div>
                   <div className="mt-2 flex gap-2 justify-center items-center bg-[#F2F2F2] p-2 border border-[#A0A2A0] rounded">
@@ -251,7 +254,8 @@ export default function Home() {
                         <span>New Blog</span>
                         <ExternalLink className="w-4 h-4" />
                       </div>
-                      <h1>Deloitte's blueprint for the future: How family offices are adapting to complexity in 2024</h1>
+                      <h1>Deloitte&apos;s blueprint for the future: How family offices are adapting to complexity in 2024</h1>
+
                     </div>
                   </div>
                 </div>
