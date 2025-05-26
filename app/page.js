@@ -224,7 +224,7 @@ export default function Home() {
                       <ExternalLink className="w-4 h-4 text-gray-400 flex-shrink-0" />
                     </div>
                     <h4 className="text-sm font-medium leading-tight line-clamp-2">
-                      Deloitte's blueprint for the future: How family offices are adapting to complexity in 2024
+                      Deloittes blueprint for the future: How family offices are adapting to complexity in 2024
                     </h4>
                   </div>
                 </div>
@@ -239,7 +239,7 @@ export default function Home() {
                       <ExternalLink className="w-4 h-4 text-gray-400 flex-shrink-0" />
                     </div>
                     <h4 className="text-sm font-medium leading-tight line-clamp-2">
-                      Deloitte's blueprint for the future: How family offices are adapting to complexity in 2024
+                      Deloittes blueprint for the future: How family offices are adapting to complexity in 2024
                     </h4>
                   </div>
                 </div>
@@ -261,7 +261,7 @@ export default function Home() {
                       <ExternalLink className="w-4 h-4 text-gray-400 flex-shrink-0" />
                     </div>
                     <h4 className="text-sm font-medium leading-tight line-clamp-2">
-                      Deloitte's blueprint for the future: How family offices are adapting to complexity in 2024
+                      Deloittes blueprint for the future: How family offices are adapting to complexity in 2024
                     </h4>
                   </div>
                 </div>
@@ -276,7 +276,7 @@ export default function Home() {
                       <ExternalLink className="w-4 h-4 text-gray-400 flex-shrink-0" />
                     </div>
                     <h4 className="text-sm font-medium leading-tight line-clamp-2">
-                      Deloitte's blueprint for the future: How family offices are adapting to complexity in 2024
+                      Deloittes blueprint for the future: How family offices are adapting to complexity in 2024
                     </h4>
                   </div>
                 </div>
@@ -342,7 +342,7 @@ export default function Home() {
                           <span>New Blog</span>
                           <ExternalLink className="w-3 lg:w-4 h-3 lg:h-4" />
                         </div>
-                        <h1 className="line-clamp-2">Deloitte's blueprint for the future: How family offices are adapting to complexity in 2024</h1>
+                        <h1 className="line-clamp-2">Deloittes blueprint for the future: How family offices are adapting to complexity in 2024</h1>
                       </div>
                     </div>
                     <div className="mt-2 flex gap-2 justify-center items-center bg-[#F2F2F2] p-2 border border-[#A0A2A0] rounded">
@@ -354,7 +354,7 @@ export default function Home() {
                           <span>New Blog</span>
                           <ExternalLink className="w-3 lg:w-4 h-3 lg:h-4" />
                         </div>
-                        <h1 className="line-clamp-2">Deloitte's blueprint for the future: How family offices are adapting to complexity in 2024</h1>
+                        <h1 className="line-clamp-2">Deloittes blueprint for the future: How family offices are adapting to complexity in 2024</h1>
                       </div>
                     </div>
                   </div>
@@ -372,7 +372,7 @@ export default function Home() {
                         <span>New Blog</span>
                         <ExternalLink className="w-3 lg:w-4 h-3 lg:h-4" />
                       </div>
-                      <h1 className="line-clamp-2">Deloitte's blueprint for the future: How family offices are adapting to complexity in 2024</h1>
+                      <h1 className="line-clamp-2">Deloittes blueprint for the future: How family offices are adapting to complexity in 2024</h1>
                     </div>
                   </div>
                   <div className="mt-2 flex gap-2 justify-center items-center bg-[#F2F2F2] p-2 border border-[#A0A2A0] rounded">
@@ -384,7 +384,7 @@ export default function Home() {
                         <span>New Blog</span>
                         <ExternalLink className="w-3 lg:w-4 h-3 lg:h-4" />
                       </div>
-                      <h1 className="line-clamp-2">Deloitte's blueprint for the future: How family offices are adapting to complexity in 2024</h1>
+                      <h1 className="line-clamp-2">Deloittes blueprint for the future: How family offices are adapting to complexity in 2024</h1>
                     </div>
                   </div>
                 </div>
