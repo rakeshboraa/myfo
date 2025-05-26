@@ -1,20 +1,25 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
-const style = document.createElement('style')
-style.textContent = `
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(10px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-    .animate-fadeIn {
-        animation: fadeIn 0.5s ease-out;
-    }
-`
-document.head.appendChild(style)
 
 const KeyFeatures = () => {
     const [hoveredFeature, setHoveredFeature] = useState(null)
 
+    useEffect(() => {
+        const style = document.createElement('style')
+        style.textContent = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(10px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            .animate-fadeIn {
+                animation: fadeIn 0.5s ease-out;
+            }
+        `
+        document.head.appendChild(style)
+        return () => {
+            document.head.removeChild(style)
+        }
+    }, [])
     const features = [
         {
             id: 1,
