@@ -111,24 +111,40 @@ const KeyFeatures = () => {
                 <div className="flex gap-2 sm:gap-4 justify-center items-center h-full">
                     {/* Default View */}
                     {!hoveredFeature && (
-                        <div className="flex gap-2 sm:gap-4 justify-center items-center h-full w-full">
-                            <div className="flex-1">
-                                <img src="/grap1.png" className="rounded w-full" alt="Graph 1" />
+                        <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center items-center h-full w-full p-2 sm:p-0">
+                            <div className="w-full sm:flex-1 h-[200px] sm:h-[312px]">
+                                <img
+                                    src="/grap1.png"
+                                    className="rounded w-full h-full"
+                                    alt="Graph 1"
+                                />
                             </div>
-                            <div className="flex-1">
-                                <img src="/grap2.png" className="rounded w-full" alt="Graph 2" />
+                            <div className="w-full sm:flex-1 h-[200px] sm:h-[312px]">
+                                <img
+                                    src="/grap2.png"
+                                    className="rounded w-full h-full"
+                                    alt="Graph 2"
+                                />
                             </div>
                         </div>
                     )}
 
                     {/* Smart Sync Demo */}
                     {hoveredFeature === 1 && (
-                        <div className="flex gap-2 sm:gap-4 justify-center items-center h-full w-full">
-                            <div className="flex-1">
-                                <img src="/grap1.png" className="rounded w-full" alt="Sync Demo" />
+                        <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center items-center h-full w-full p-2 sm:p-0">
+                            <div className="w-full sm:flex-1 h-[200px] sm:h-[312px]">
+                                <img
+                                    src="/grap1.png"
+                                    className="rounded w-full h-full"
+                                    alt="Graph 1"
+                                />
                             </div>
-                            <div className="flex-1">
-                                <img src="/grap2.png" className="rounded w-full" alt="Sync Demo" />
+                            <div className="w-full sm:flex-1 h-[200px] sm:h-[312px]">
+                                <img
+                                    src="/grap2.png"
+                                    className="rounded w-full h-full"
+                                    alt="Graph 2"
+                                />
                             </div>
                         </div>
                     )}

@@ -1,14 +1,12 @@
 "use client"
-import { AlignLeft, ArrowLeft, ArrowRight, Dot, ExternalLink, Instagram, Linkedin, Share, Twitter } from "lucide-react";
+import { AlignLeft, ArrowLeft, ArrowRight, Dot, ExternalLink, Instagram, Linkedin, Share, Twitter, X } from "lucide-react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { useState } from "react";
 import KeyFeatures from "@/components/KeyFeatures";
 import Testimonial from "@/components/Testimonial";
 
-
-
 export default function Home() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false); // Changed default to false for mobile-first approach
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -16,7 +14,23 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex flex-col lg:flex-row container mx-auto">
+      <div className="flex flex-col lg:flex-row container mx-auto relative">
+        {/* Mobile Menu Button - Fixed position for mobile */}
+        <button
+          onClick={toggleSidebar}
+          className="lg:hidden fixed top-4 right-4 z-50 w-10 h-10 bg-white shadow-lg flex items-center justify-center border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
+        >
+          {isSidebarOpen ? <X className="w-5 h-5" /> : <AlignLeft className="w-5 h-5" />}
+        </button>
+
+        {/* Mobile Overlay */}
+        {isSidebarOpen && (
+          <div 
+            className="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-30"
+            onClick={toggleSidebar}
+          />
+        )}
+
         <div className="flex-4 w-full lg:w-auto">
           <div className="px-2 sm:px-4">
             <div className="mx-auto lg:border-l flex lg:border-r">
@@ -156,7 +170,127 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={`${isSidebarOpen ? 'w-full lg:flex-[1.2]' : 'w-16'} py-4 bg-transparent pr-2 lg:pr-4 ${isSidebarOpen ? 'block lg:sticky' : 'absolute'} right-0 top-0 self-start transition-all duration-300 ease-in-out overflow-hidden`}>
+        {/* Mobile Sidebar - Slide from right */}
+        <div className={`
+          lg:hidden fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white shadow-2xl z-40 transform transition-transform duration-300 ease-in-out overflow-y-auto
+          ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'}
+        `}>
+          <div className="p-4">
+            {/* Mobile Header */}
+            <div className="flex justify-between items-center mb-6 pb-4 border-b">
+              <h2 className="text-lg font-semibold">Menu</h2>
+              <button
+                onClick={toggleSidebar}
+                className="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-gray-100"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            {/* Mobile Auth Buttons */}
+            <div className="flex gap-2 mb-6">
+              <button className="flex-1 px-4 py-2 bg-[#A0A2A0] text-white text-sm rounded-lg">
+                Log In
+              </button>
+              <button className="px-4 py-2 bg-gray-100 border border-gray-300 text-sm rounded-lg">
+                Demo
+              </button>
+            </div>
+
+            {/* Time Display */}
+            <div className="mb-6 p-3 bg-gray-50 rounded-lg">
+              <span className="text-sm text-gray-600">9:02 PM NYC</span>
+            </div>
+
+            {/* Social Media Links */}
+            <div className="flex gap-4 mb-8 justify-center">
+              <Instagram className="w-6 h-6 text-gray-600 hover:text-blue-600 cursor-pointer" />
+              <Linkedin className="w-6 h-6 text-gray-600 hover:text-blue-600 cursor-pointer" />
+              <Twitter className="w-6 h-6 text-gray-600 hover:text-blue-600 cursor-pointer" />
+            </div>
+
+            {/* News & Blogs Section */}
+            <div className="mb-8">
+              <h3 className="text-base font-medium mb-4">News + Blogs</h3>
+              
+              <div className="space-y-3">
+                <div className="flex gap-3 p-3 bg-gray-50 rounded-lg border">
+                  <div className="w-16 h-12 flex-shrink-0">
+                    <img src="/hero.png" className="w-full h-full object-cover rounded" alt="Blog" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex justify-between items-start mb-1">
+                      <span className="text-xs text-gray-500">New Blog</span>
+                      <ExternalLink className="w-4 h-4 text-gray-400 flex-shrink-0" />
+                    </div>
+                    <h4 className="text-sm font-medium leading-tight line-clamp-2">
+                      Deloitte's blueprint for the future: How family offices are adapting to complexity in 2024
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="flex gap-3 p-3 bg-gray-50 rounded-lg border">
+                  <div className="w-16 h-12 flex-shrink-0">
+                    <img src="/hero.png" className="w-full h-full object-cover rounded" alt="Blog" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex justify-between items-start mb-1">
+                      <span className="text-xs text-gray-500">New Blog</span>
+                      <ExternalLink className="w-4 h-4 text-gray-400 flex-shrink-0" />
+                    </div>
+                    <h4 className="text-sm font-medium leading-tight line-clamp-2">
+                      Deloitte's blueprint for the future: How family offices are adapting to complexity in 2024
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* As Seen On Section */}
+            <div className="mb-8">
+              <h3 className="text-base font-medium mb-4">As Seen On</h3>
+              
+              <div className="space-y-3">
+                <div className="flex gap-3 p-3 bg-gray-50 rounded-lg border">
+                  <div className="w-16 h-12 flex-shrink-0">
+                    <img src="/hero.png" className="w-full h-full object-cover rounded" alt="Media" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex justify-between items-start mb-1">
+                      <span className="text-xs text-gray-500">Featured</span>
+                      <ExternalLink className="w-4 h-4 text-gray-400 flex-shrink-0" />
+                    </div>
+                    <h4 className="text-sm font-medium leading-tight line-clamp-2">
+                      Deloitte's blueprint for the future: How family offices are adapting to complexity in 2024
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="flex gap-3 p-3 bg-gray-50 rounded-lg border">
+                  <div className="w-16 h-12 flex-shrink-0">
+                    <img src="/hero.png" className="w-full h-full object-cover rounded" alt="Media" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex justify-between items-start mb-1">
+                      <span className="text-xs text-gray-500">Featured</span>
+                      <ExternalLink className="w-4 h-4 text-gray-400 flex-shrink-0" />
+                    </div>
+                    <h4 className="text-sm font-medium leading-tight line-clamp-2">
+                      Deloitte's blueprint for the future: How family offices are adapting to complexity in 2024
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop Sidebar - Original behavior preserved */}
+        <div className={`
+          hidden lg:block
+          ${isSidebarOpen ? 'lg:flex-[1.2]' : 'w-16'} 
+          py-4 bg-transparent pr-2 lg:pr-4 sticky right-0 top-0 self-start transition-all duration-300 ease-in-out overflow-hidden
+        `}>
           <div className="flex flex-col">
             <div className="pt-2">
               <div className="flex justify-between">

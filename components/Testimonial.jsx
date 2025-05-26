@@ -56,7 +56,7 @@ const Testimonial = () => {
     }
 
     return (
-        <div className="inline-flex flex-col mt-6 lg:mt-10 p-3 sm:p-4 rounded max-w-full lg:max-w-[800px]">
+        <div className="inline-flex flex-col items-center justify-center mt-6 lg:mt-20 h-[400px] p-3 sm:p-4 rounded max-w-full lg:max-w-[800px]">
             <div className='flex flex-col lg:flex-row gap-4 lg:gap-30 justify-between w-full'>
                 <h1 className="text-[18px] sm:text-[20px] lg:text-xl mb-2 lg:mb-4">Testimonials</h1>
                 <div className="flex-1 lg:flex-auto">
